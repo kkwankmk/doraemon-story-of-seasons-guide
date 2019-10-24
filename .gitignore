@@ -1,5 +1,6 @@
 /node_modules
 /.next
+/docs
 
 yarn-error.log
 .env
