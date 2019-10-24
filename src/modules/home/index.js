@@ -1,22 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
 
 import PageContent from '../core/components/pageContent';
 import PageTitle from '../core/components/pageTitle';
 import CardMenu from './cardMenu';
 import { getAssetPrefix } from '../core/utils';
 
-const Cover = styled.div`
-  background: url(${getAssetPrefix('/images/doraemon_cover.jpg')}) center no-repeat;
-  background-size: cover;
-  position: relative;
-  height: 88vh;
-`;
-
 export default () => {
   return (
     <>
-      <Cover />
+      <img src={getAssetPrefix('/images/doraemon_cover.jpg')} width="100%" />
       <PageContent>
         <>
           <PageTitle title="Introduction" />
