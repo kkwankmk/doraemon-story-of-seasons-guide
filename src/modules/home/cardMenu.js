@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Carousel, Card, Row, Col } from 'antd';
 
+import { getAssetPrefix } from '../core/utils';
+
 const { Meta } = Card;
 
 const Wrapper = styled(Row)`
@@ -57,7 +59,7 @@ export default () => {
       <StyledCarousel {...settings}>
         {data.map(d => (
           <Col key={d.title} sm={8}>
-            <Card hoverable cover={<img src={d.image} height="150px" />}>
+            <Card hoverable cover={<img src={getAssetPrefix(d.image)} height="150px" />}>
               <Meta title={d.title} />
             </Card>
           </Col>
