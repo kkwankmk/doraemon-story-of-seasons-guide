@@ -41289,20 +41289,26 @@ var settings = {
   speed: 500,
   slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: true
+  autoplay: true,
+  responsive: [{
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 1
+    }
+  }]
 };
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return __jsx(Wrapper, {
     gutter: 16,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 66
     },
     __self: this
   }, __jsx(StyledCarousel, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, settings, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 67
     },
     __self: this
   }), data.map(function (d) {
@@ -41311,7 +41317,7 @@ var settings = {
       sm: 8,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 61
+        lineNumber: 69
       },
       __self: this
     }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_8___default.a, {
@@ -41321,20 +41327,20 @@ var settings = {
         height: "150px",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 70
         },
         __self: this
       }),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 62
+        lineNumber: 70
       },
       __self: this
     }, __jsx(Meta, {
       title: d.title,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 63
+        lineNumber: 71
       },
       __self: this
     })));
@@ -41354,11 +41360,10 @@ var settings = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _core_components_pageContent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/components/pageContent */ "./src/modules/core/components/pageContent/index.js");
-/* harmony import */ var _core_components_pageTitle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../core/components/pageTitle */ "./src/modules/core/components/pageTitle/index.js");
-/* harmony import */ var _cardMenu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./cardMenu */ "./src/modules/home/cardMenu.js");
-/* harmony import */ var _core_utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../core/utils */ "./src/modules/core/utils.js");
+/* harmony import */ var _core_components_pageContent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/components/pageContent */ "./src/modules/core/components/pageContent/index.js");
+/* harmony import */ var _core_components_pageTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/components/pageTitle */ "./src/modules/core/components/pageTitle/index.js");
+/* harmony import */ var _cardMenu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./cardMenu */ "./src/modules/home/cardMenu.js");
+/* harmony import */ var _core_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../core/utils */ "./src/modules/core/utils.js");
 var _jsxFileName = "/Users/kkwankmk/Code/doraemon/src/modules/home/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -41366,35 +41371,32 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
-var Cover = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "home__Cover",
-  componentId: "webmyk-0"
-})(["background:url(", ") center no-repeat;background-size:cover;position:relative;height:88vh;"], Object(_core_utils__WEBPACK_IMPORTED_MODULE_5__["getAssetPrefix"])('/images/doraemon_cover.jpg'));
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(Cover, {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("img", {
+    src: Object(_core_utils__WEBPACK_IMPORTED_MODULE_4__["getAssetPrefix"])('/images/doraemon_cover.jpg'),
+    width: "100%",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 11
     },
     __self: this
-  }), __jsx(_core_components_pageContent__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }), __jsx(_core_components_pageContent__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 12
     },
     __self: this
-  }, __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_core_components_pageTitle__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_core_components_pageTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Introduction",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 14
     },
     __self: this
-  }), "Doraemon Story of Seasons is Harvest Moon rebranded. A very popular farming game. Expand your farm by growing crops, raising livestock, fishing and selling pretty much everything you find. We'll guide you through all the mechanics of the game and help you get started. Feel free to contact us through private messages or by leaving a comment. This guide is a work in progress and it will be updated regularly."), __jsx(_cardMenu__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }), "Doraemon Story of Seasons is Harvest Moon rebranded. A very popular farming game. Expand your farm by growing crops, raising livestock, fishing and selling pretty much everything you find. We'll guide you through all the mechanics of the game and help you get started. Feel free to contact us through private messages or by leaving a comment. This guide is a work in progress and it will be updated regularly."), __jsx(_cardMenu__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 22
     },
     __self: this
   })));
