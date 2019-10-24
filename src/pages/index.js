@@ -3,6 +3,7 @@ import { Layout } from 'antd';
 import styled from 'styled-components';
 
 import HomePage from '../modules/home';
+import { getAssetPrefix } from '../modules/core/utils';
 
 const { Header, Footer, Content } = Layout;
 
@@ -21,7 +22,7 @@ export default () => (
   <div>
     <Layout>
       <StyledHeader>
-        <img src="/images/logo.png" height="64px" />
+        <img src={getAssetPrefix('/images/logo.png')} height="64px" />
       </StyledHeader>
       <StyledContent>
         <HomePage />
