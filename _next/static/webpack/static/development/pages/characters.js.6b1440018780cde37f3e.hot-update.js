@@ -26,6 +26,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _core_components_pageContent__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../core/components/pageContent */ "./src/modules/core/components/pageContent/index.js");
 /* harmony import */ var _core_components_pageTitle__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../core/components/pageTitle */ "./src/modules/core/components/pageTitle/index.js");
+/* harmony import */ var _core_utils__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../core/utils */ "./src/modules/core/utils.js");
 
 
 
@@ -34,6 +35,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var _jsxFileName = "/Users/kkwankmk/Code/doraemon/src/modules/character/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
+
 
 
 
@@ -61,31 +63,29 @@ var data = [{
   name: 'Doraemon',
   description: 'A blue cat-type robot from the twenty second century, Doraemon provides his friends with gadgets from the future.',
   item: 'Dorayaki / Sunflower'
-} // {
-//   image: '/images/characters/noby.jpg',
-//   name: 'Noby',
-//   description: 'Description'
-// },
-// {
-//   image: '/images/characters/doraemon.jpg',
-//   name: 'Doraemon',
-//   description:
-//     'A blue cat-type robot from the twenty second century, Doraemon provides his friends with gadgets from the future.',
-//   item: 'Dorayaki / Sunflower'
-// }
-];
+}, {
+  image: '/images/characters/sue.jpg',
+  name: 'Sue',
+  description: 'Sue is a character in Doraemon: Story of Seasons.',
+  item: 'Baked Sweet Potato / P. Daisy / Sweet Potato'
+}, {
+  image: '/images/characters/doraemon.jpg',
+  name: 'Big G',
+  description: 'Big G is a character in Doraemon: Story of Seasons.',
+  item: 'Dorayaki / Sunflower'
+}];
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return __jsx(_core_components_pageContent__WEBPACK_IMPORTED_MODULE_8__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 52
     },
     __self: this
   }, __jsx(_core_components_pageTitle__WEBPACK_IMPORTED_MODULE_9__["default"], {
     title: "Main Characters",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 53
     },
     __self: this
   }), __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -93,7 +93,7 @@ var data = [{
     type: "flex",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 54
     },
     __self: this
   }, data.map(function (d) {
@@ -103,61 +103,61 @@ var data = [{
       key: d.name,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 55
+        lineNumber: 56
       },
       __self: this
     }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_1___default.a, {
       bordered: false,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 56
+        lineNumber: 57
       },
       __self: this
     }, __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default.a, {
       gutter: 16,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 58
       },
       __self: this
     }, __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_5___default.a, {
       span: 8,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 58
+        lineNumber: 59
       },
       __self: this
     }, __jsx("img", {
-      src: d.image,
+      src: Object(_core_utils__WEBPACK_IMPORTED_MODULE_10__["getAssetPrefix"])(d.image),
       width: "100%",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 59
+        lineNumber: 60
       },
       __self: this
     })), __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_5___default.a, {
       span: 16,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 62
+        lineNumber: 63
       },
       __self: this
     }, __jsx(StyledName, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 63
+        lineNumber: 64
       },
       __self: this
     }, d.name), __jsx(StyledDescription, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 64
+        lineNumber: 65
       },
       __self: this
     }, d.description))), __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 67
+        lineNumber: 68
       },
       __self: this
     }, "Gift: ", d.item || '-')));
@@ -167,4 +167,4 @@ var data = [{
 /***/ })
 
 })
-//# sourceMappingURL=characters.js.d78ea082cfbec1fc54de.hot-update.js.map
+//# sourceMappingURL=characters.js.6b1440018780cde37f3e.hot-update.js.map
