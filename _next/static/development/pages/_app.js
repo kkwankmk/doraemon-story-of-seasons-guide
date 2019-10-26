@@ -37150,31 +37150,29 @@ var StyledFooter = Object(styled_components__WEBPACK_IMPORTED_MODULE_3__["defaul
   displayName: "layout__StyledFooter",
   componentId: "sc-8ek0gd-2"
 })(["position:fixed;bottom:0;z-index:5;width:100%;"]);
+var StyledLayout = Object(styled_components__WEBPACK_IMPORTED_MODULE_3__["default"])(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default.a).withConfig({
+  displayName: "layout__StyledLayout",
+  componentId: "sc-8ek0gd-3"
+})(["min-height:100vh;"]);
 /* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
   var children = _ref.children;
-  return __jsx("div", {
+  return __jsx(StyledLayout, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: this
-  }, __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 33
     },
     __self: this
   }, __jsx(StyledHeader, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 34
     },
     __self: this
   }, __jsx("a", {
     href: Object(_utils__WEBPACK_IMPORTED_MODULE_4__["getAssetPrefix"])('/'),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 35
     },
     __self: this
   }, __jsx("img", {
@@ -37182,22 +37180,22 @@ var StyledFooter = Object(styled_components__WEBPACK_IMPORTED_MODULE_3__["defaul
     height: "64px",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 36
     },
     __self: this
   }))), __jsx(StyledContent, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 39
     },
     __self: this
   }, children), __jsx(StyledFooter, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 40
     },
     __self: this
-  }, "Copyright \xA92019")));
+  }, "Copyright \xA92019"));
 });
 
 /***/ }),
