@@ -16,7 +16,8 @@ module.exports = withLess({
   },
 
   exportPathMap: () => ({
-    '/': { page: '/' }
+    '/': { page: '/' },
+    '/characters': { page: '/characters' }
   }),
   assetPrefix: isProd ? '/doraemon-story-of-seasons-guide' : '',
 

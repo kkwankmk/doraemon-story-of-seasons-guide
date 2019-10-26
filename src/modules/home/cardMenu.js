@@ -28,19 +28,23 @@ const StyledCarousel = styled(Carousel)`
 const data = [
   {
     title: 'Guides',
-    image: '/images/cards/guides.jpg'
+    image: '/images/cards/guides.jpg',
+    path: '/'
   },
   {
     title: 'Characters',
-    image: '/images/cards/characters.jpg'
+    image: '/images/cards/characters.jpg',
+    path: '/characters'
   },
   {
     title: 'Festivals',
-    image: '/images/cards/festivals.jpg'
+    image: '/images/cards/festivals.jpg',
+    path: '/'
   },
   {
     title: 'Events',
-    image: '/images/cards/events.jpg'
+    image: '/images/cards/events.jpg',
+    path: '/'
   }
 ];
 
@@ -67,9 +71,14 @@ export default () => {
       <StyledCarousel {...settings}>
         {data.map(d => (
           <Col key={d.title} sm={8}>
-            <Card hoverable cover={<img src={getAssetPrefix(d.image)} height="150px" />}>
-              <Meta title={d.title} />
-            </Card>
+            <a href={getAssetPrefix(d.path)} target="_blank">
+              <Card
+                hoverable
+                cover={<img src={getAssetPrefix(d.image)} style={{ objectFit: 'cover' }} />}
+              >
+                <Meta title={d.title} />
+              </Card>
+            </a>
           </Col>
         ))}
       </StyledCarousel>
